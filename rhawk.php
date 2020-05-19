@@ -5,9 +5,9 @@ require 'var.php';
 echo $cln;
 function update()
     {
-        echo "\n\e[91m\e[1m[+] RED HAWK UPDATE UTILITY [+]\nUpdate in progress, please wait...\n\n$cln";
+        echo "\n\e[91m\e[1m[+] Anon_R7 UPDATE UTILITY [+]\nUpdate in progress, please wait...\n\n$cln";
         system("git fetch origin && git reset --hard origin/master && git clean -f -d");
-        echo $bold . $fgreen . "[i] Job finished successfully! Please Restart RED HAWK \n" . $cln;
+        echo $bold . $fgreen . "[i] Job finished successfully! Please Restart Anon_R7 \n" . $cln;
         exit;
     }
     
@@ -33,7 +33,7 @@ userinput("Enter The Website You Want To Scan ");
 $ip = trim(fgets(STDIN, 1024));
 if ($ip == "help")
   {
-    echo "\n\n[+] RED HAWK Help Screen [+] \n\n";
+    echo "\n\n[+] Anon_R7 Help Screen [+] \n\n";
     echo $bold . $lblue . "Commands\n";
     echo "========\n";
     echo $fgreen . "[1] help:$cln View The Help Menu\n";
@@ -44,7 +44,7 @@ if ($ip == "help")
   }
 elseif ($ip == "fix")
   {
-    echo "\n\e[91m\e[1m[+] RED HAWK FiX MENU [+]\n\n$cln";
+    echo "\n\e[91m\e[1m[+] Anon_R7 FiX MENU [+]\n\n$cln";
     echo $bold . $blue . "[+] Checking If cURL module is installed ...\n";
     if (!extension_loaded('curl'))
       {
@@ -69,7 +69,7 @@ elseif ($ip == "fix")
       {
         echo $bold . $fgreen . "[i] php-XML is already installed, You Are All SET ;) \n";
       }
-    echo $bold . $fgreen . "[i] Job finished successfully! Please Restart RED HAWK \n";
+    echo $bold . $fgreen . "[i] Job finished successfully! Please Restart Anon_R7 \n";
     exit;
   }
 elseif ($ip == "update")
@@ -351,7 +351,7 @@ askscan:
             echo $bold . $lblue . "[i] Total Sites Found On This Server :$cln " . $green . count($array) . "\n\n$cln";
             if (count($array) > 0)
               {
-                userinput("Do You Want RED HAWK To Detect CMS Of The Sites? [Y/N]");
+                userinput("Do You Want Anon_R7 To Detect CMS Of The Sites? [Y/N]");
                 $detectcmsui = trim(fgets(STDIN, 1024));
                 if ($detectcmsui == "y" | $detectcmsui == "Y")
                   {
@@ -605,7 +605,7 @@ askscan:
                 else
                   {
                     $reallink = $ipsl . $ip;
-                    echo $red . "Failed \n\n[!] RED HAWK could not determine the WordPress version of the target!";
+                    echo $red . "Failed \n\n[!] Anon_R7 could not determine the WordPress version of the target!";
                     echo "\n\n";
                     echo $bold . $yellow . "[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n\n";
                     trim(fgets(STDIN, 1024));
@@ -745,7 +745,7 @@ askscan:
           }
         elseif ($scan == 'U' || $scan == 'u')
           {
-            echo "\n\n" . $bold . $yellow . "-[ RED HAWK Update Corner]-\n\n" . $cln;
+            echo "\n\n" . $bold . $yellow . "-[ Anon_R7 Update Corner]-\n\n" . $cln;
             echo $bold . "[i] Fetching Stuffs .... \n" . $cln;
             $latestversion = readcontents("https://raw.githubusercontent.com/Tuhinshubhra/RED_HAWK/master/version.txt");
             echo $bold . $blue . "[C] Current Version: " . $rhversion . $cln;
@@ -776,7 +776,7 @@ askscan:
               }
             elseif ($rhversion == $latestversion)
               {
-                echo $bold . $fgreen . "\n[i] You are already running the latest version of RED HAWK. \n\n" . $cln;
+                echo $bold . $fgreen . "\n[i] You are already running the latest version of Anon_R7. \n\n" . $cln;
                 goto scanlist;
               }
             else
@@ -786,7 +786,7 @@ askscan:
               }
           }
         elseif ($scan == "F" || $scan == "f"){
-          echo "\n\e[91m\e[1m[+] RED HAWK FiX MENU [+]\n\n$cln";
+          echo "\n\e[91m\e[1m[+] Anon_R7 FiX MENU [+]\n\n$cln";
           echo $bold . $blue . "[+] Checking If cURL module is installed ...\n";
           if (!extension_loaded('curl'))
             {
@@ -811,7 +811,7 @@ askscan:
             {
               echo $bold . $fgreen . "[i] php-XML is already installed, You Are All SET ;) \n";
             }
-          echo $bold . $fgreen . "[i] Job finished successfully! Please Restart RED HAWK \n";
+          echo $bold . $fgreen . "[i] Job finished successfully! Please Restart Anon_R7 \n";
           exit;
         }
         elseif ($scan == "A" || $scan == "a")
@@ -1232,4 +1232,4 @@ csel:
           }
       }
   }
-?>
+?> 
