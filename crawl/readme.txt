@@ -1,23 +1,23 @@
-This is a Part of RED HAWK
+Ini adalah Bagian dari RED HAWK
 
-[ D E S C R I P T I O N ]
+[D E S C R I P T I O N]
 
-This directory contains mainly 4 files namely
+Direktori ini berisi terutama 4 file yaitu
 
 - admin.ini
 - backup.ini
 - others.ini
 - readme.txt
 
-The first three files are mendetory for the RED HAWK scanner. These files have the list of files and directories which the scanner uses for crawling.
+Tiga file pertama adalah pertapaan untuk pemindai RED HAWK. File-file ini memiliki daftar file dan direktori yang digunakan pemindai untuk merangkak.
 
-[ U S A G E   &   W A R N I N G S ]
+[U S A G E & W A R N I N G S]
 
-• You can edit these files to put your own customized list.
+• Anda dapat mengedit file-file ini untuk menempatkan daftar kustom Anda sendiri.
 
-• The 3 different ini files have list of different kinds of files and directories.
- - admin.ini : contains a list of admin pages or admin directories.
- - backup.ini : contains a list of commonly known backup files.
- - others.ini : basically all the other lists.
+• 3 file ini berbeda memiliki daftar berbagai jenis file dan direktori.
+ - admin.ini: berisi daftar halaman admin atau direktori admin.
+ - backup.ini: berisi daftar file cadangan yang umum dikenal.
+ - others.ini: pada dasarnya semua daftar lainnya.
 
-• Please NOTE the lists are separeted by COMMA "," any other type of separation used will cause error while crawling.
+• Harap PERHATIKAN daftar dipisahkan oleh COMMA "," segala jenis pemisahan lain yang digunakan akan menyebabkan kesalahan saat merangkak.
